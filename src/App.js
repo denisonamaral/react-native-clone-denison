@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, ScrollView} from 'react-native';
 
 // Components
 import Categories from './components/categories/Categories';
@@ -10,21 +10,22 @@ import Stores from './components/stores/Stores';
 
 function App() {
   return (
-    <View style={style.App}>
-      <Categories />
-      <Title name="Em destaque" />
-      <AllHighlights />
-      <Title name="Cupons" />
-      <AllCupons />
-      <Title name="Lojas" />
-      <Stores />
-    </View>
+    <ScrollView>
+      <View style={style.App}>
+        <Categories />
+        <Title name="Em destaque" />
+        <AllHighlights />
+        <Title name="Cupons" />
+        <AllCupons />
+        <Title name="Lojas" />
+        <Stores />
+      </View>
+    </ScrollView>
   );
 }
 
 const style = StyleSheet.create({
   App: {
-    flexGrow: 1,
     backgroundColor: 'rgb(18, 18, 18)',
   },
 });

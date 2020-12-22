@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, FlatList} from 'react-native';
+import {View, FlatList} from 'react-native';
 import Highlight from './Highlight';
 import dataHighlights from './dataHighlights';
 

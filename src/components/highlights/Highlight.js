@@ -18,6 +18,10 @@ function Highlight(props) {
       </View>
 
       <Text style={style.Title}>{props.description}</Text>
+      <Image
+        style={style.ImageStar}
+        source={{uri: 'https://i.imgur.com/jV79n6m.png'}}
+      />
     </ImageBackground>
   );
 }
@@ -43,6 +47,12 @@ const style = StyleSheet.create({
     marginTop: 7,
     width: 45,
     height: 45,
+  },
+  ImageStar: {
+    marginTop: 3,
+    marginLeft: 10,
+    width: 80,
+    height: 15,
   },
 });
 
