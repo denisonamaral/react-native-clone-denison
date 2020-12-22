@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, Image, ImageBackground} from 'react-native';
 import CouponBadge from './badge/CouponBadge';
-import dataBadge from './badge/dataBadge';
 
 function Coupon(props) {
   return (
@@ -32,7 +31,6 @@ const style = {
     width: 300,
     height: 100,
     borderRadius: 3,
-    overflow: 'hidden',
     borderWidth: 0.1,
     borderStyle: 'solid',
     borderColor: 'white',
